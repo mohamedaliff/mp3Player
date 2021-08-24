@@ -14,3 +14,26 @@ Noted**
 This is old project with missing database file. Need to re-design the database to make sure the application can run
 
 #####################
+
+Main screen
+
+![alt text](https://github.com/mohamedaliff/mp3Player/blob/main/screen_1.PNG?raw=true)
+
+
+Add Song screen
+
+![alt text](https://github.com/mohamedaliff/mp3Player/blob/main/screen_2.PNG?raw=true)
+
+
+Manage Song screen
+
+![alt text](https://github.com/mohamedaliff/mp3Player/blob/main/screen_3.PNG?raw=true)
+
+
+Add song into playlist screen
+
+![alt text](https://github.com/mohamedaliff/mp3Player/blob/main/screen_4.PNG?raw=true)
+
+Add song category(genre) screen
+
+![alt text](https://github.com/mohamedaliff/mp3Player/blob/main/screen_5.PNG?raw=true)
