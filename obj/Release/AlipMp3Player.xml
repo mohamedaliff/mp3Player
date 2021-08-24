@@ -1,0 +1,304 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AlipMp3Player
+</name>
+</assembly>
+<members>
+<member name="T:AlipMp3Player.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources._next">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources._stop">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources.back">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources.fast_forward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources.folder">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources.pause">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources.pencil">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources.play">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AlipMp3Player.My.Resources.Resources.rewind">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:AlipMp3Player.AudioFile">
+ <summary>
+ This class is a wrapper for the Windows API calls to play wave, midi or mp3 files.
+ </summary>
+ <remarks>
+ </remarks>
+</member>
+<member name="M:AlipMp3Player.AudioFile.#ctor(System.String)">
+ <summary>
+ Constructor:  Location is the filename of the media to play.  Wave files and Mp3 files are the supported formats.
+ </summary>
+ <param name="Location"></param>
+ <remarks></remarks>
+</member>
+<member name="M:AlipMp3Player.AudioFile.Play">
+ <summary>
+ Plays the file that is specified as the filename.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:AlipMp3Player.AudioFile.Pause">
+ <summary>
+ Pause the current play back.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:AlipMp3Player.AudioFile.Resume">
+ <summary>
+ Resume the current play back if it is currently paused.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:AlipMp3Player.AudioFile.Stop">
+ <summary>
+ Stop the current file if it's playing.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:AlipMp3Player.AudioFile.Close">
+ <summary>
+ Close the file.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:AlipMp3Player.AudioFile.Wait">
+ <summary>
+ Halt the program until the .wav file is done playing.  Be careful, this will lock the entire program up until the
+ file is done playing.  It behaves as if the Windows Sleep API is called while the file is playing (and maybe it is, I don't
+ actually know, I'm just theorizing).  :P
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:AlipMp3Player.AudioFile.Milleseconds">
+ <summary>
+ Sets the audio file's time format via the mciSendString API.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:AlipMp3Player.AudioFile.SecondsPlayed">
+ <summary>
+ Sets the audio file's time format via the mciSendString API.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:AlipMp3Player.AudioFile.Status">
+ <summary>
+ Gets the status of the current playback file via the mciSendString API.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:AlipMp3Player.AudioFile.FileSize">
+ <summary>
+ Gets the file size of the current audio file.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:AlipMp3Player.AudioFile.Channels">
+ <summary>
+ Gets the channels of the file via the mciSendString API.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:AlipMp3Player.AudioFile.Debug">
+ <summary>
+ Used for debugging purposes.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:AlipMp3Player.AudioFile.IsPaused">
+ <summary>
+ Whether or not the current playback is paused.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:AlipMp3Player.AudioFile.Filename">
+ <summary>
+ The current filename of the file that is to be played back.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:AlipMp3Player.CategoryLogic.InsertSongCategory">
+ <summary>
+ This function is used to insert song category data into database during add new process
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.CategoryLogic.GetAllCategory">
+ <summary>
+ This function is to get list of categories from database and set into dataset
+ </summary>
+</member>
+<member name="M:AlipMp3Player.CategoryLogic.GetCategoryList(System.Windows.Forms.ComboBox)">
+ <summary>
+ This function is to get list of categories from database and set into combobox
+ </summary>
+ <param name="cb"></param>
+</member>
+<member name="M:AlipMp3Player.CategoryLogic.DeleteCategory(System.Int32)">
+ <summary>
+ This function is to delete category by ID selected
+ </summary>
+ <param name="CategoryID"></param>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.CategoryLogic.UpdateCategory(System.Int32)">
+ <summary>
+ This function is used to update song data in the database during detail update process
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.PlaylistLogic.InsertPlaylist">
+ <summary>
+ This function is used to insert song data into database during add new process
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.PlaylistLogic.GetAllSongInPlaylist(System.Int32)">
+ <summary>
+ This function will list all of song fetched from playlist table into list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.PlaylistLogic.GetAllSongNotInPlaylist(System.Int32)">
+ <summary>
+ This function will list all of song not in playlist table into list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.PlaylistLogic.GetAllSongInPlaylistByKeyword(System.Int32,System.String)">
+ <summary>
+ This function will list all of song fetched from playlist table into list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.PlaylistLogic.GetAllSongNotInPlaylistByKeyword(System.Int32,System.String)">
+ <summary>
+ This function will list all of song not in playlist table into list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.PlaylistLogic.DeleteSong(System.Int32,System.Int32)">
+ <summary>
+ This function is to delete customer by ID selected
+ </summary>
+ <param name="SongID"></param>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.SongLogic.InsertSong">
+ <summary>
+ This function is used to insert song data into database during add new process
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.SongLogic.GetAllSongByPlaylist(System.Int32)">
+ <summary>
+ This function will list all of song fetched from playlist table into list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.SongLogic.DeleteSong(System.Int32)">
+ <summary>
+ This function is to delete customer by ID selected
+ </summary>
+ <param name="SongID"></param>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.SongLogic.UpdateSong(System.Int32)">
+ <summary>
+ This function is used to update song data in the database during detail update process
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.SongLogic.GetAllSongByKeyword(System.String)">
+ <summary>
+ This function will list all of song by artist fetched from playlist table into list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.SongLogic.GetAllSongByKeywordAndCategory(System.String,System.Int32)">
+ <summary>
+ This function will list all of song by artist fetched from playlist table into list
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.URLLogic.InsertBaseURL">
+ <summary>
+ This function is used to insert url data into database during add new process
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:AlipMp3Player.URLLogic.GetBaseURL">
+ <summary>
+ This function is to get list of url from database and set into dataset
+ </summary>
+</member>
+</members>
+</doc>
